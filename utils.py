@@ -60,6 +60,7 @@ def g_mean_multiclass(y_true, y_pred, n_classes):
     return g_mean,recalls
 
 def metric_list(y_test,y_preds,y_scores,num_of_classes):
+    
     accuracy = accuracy_score(y_test, y_preds)
     precision = precision_score(y_test, y_preds, average='weighted')
     recall = recall_score(y_test, y_preds, average='weighted')
