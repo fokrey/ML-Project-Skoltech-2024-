@@ -4,6 +4,7 @@ from itertools import combinations
 from sklearn.metrics import precision_recall_curve, auc
 from sklearn.preprocessing import label_binarize
 import numpy as np
+from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score, classification_report
 
 def f_measure(y_true, y_pred, beta=1):
     precision = precision_score(y_true, y_pred, average='weighted')
@@ -57,3 +58,17 @@ def g_mean_multiclass(y_true, y_pred, n_classes):
         recalls.append(recall)
     g_mean = np.sqrt(np.prod(recalls))
     return g_mean,recalls
+
+def metric_list(y_test,y_preds,y_scores,num_of_classes):
+    accuracy = accuracy_score(y_test, y_preds)
+    precision = precision_score(y_test, y_preds, average='weighted')
+    recall = recall_score(y_test, y_preds, average='weighted')
+    f1 = f1_score(y_test, y_preds, average='weighted')
+    Macro_Averaged =macro_averaged_auprc(y_true=y_test,y_scores=y_scores,n_classes=num_of_classes)
+    F_measure = f_measure(y_test,y_preds,beta=10)
+    Modified_mcc = mmcc(y_true=y_test,y_pred=y_preds,classes=range(num_of_classes))
+    MCC_metric = matthews_corrcoef(y_test,y_preds)
+    Gmean = np.prod(g_mean_multiclass(y_true=y_test,y_pred=y_preds,n_classes=num_of_classes)[1][1::])
+
+    score_list = [accuracy,precision,recall,f1,Macro_Averaged,F_measure,Modified_mcc,MCC_metric,Gmean]
+    return score_list
