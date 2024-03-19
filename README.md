@@ -1,4 +1,5 @@
 # ML-Project-Skoltech-2024
+# Team Balancify
 Boosting approaches for multi-class imbalanced data classification
 
 ## Project Overview
