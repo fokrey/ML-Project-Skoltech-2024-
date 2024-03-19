@@ -3,3 +3,7 @@ ucimlrepo
 lightgbm
 imblearn
 xgboost
+sklearn
+warnings
+pandas
+seaborn
