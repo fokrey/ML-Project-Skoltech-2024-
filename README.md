@@ -2,16 +2,11 @@
 # Team Balancify
 Boosting approaches for multi-class imbalanced data classification
 
-# Before running our project do this steps
-- git clone https://github.com/fokrey/ML-Project-Skoltech-2024-.git
-- cd ML-Project-Skoltech-2024
-- pip install -r requirements.txt
-
 ## Project Overview
 - First of all you need to do this steps
-git clone https://github.com/fokrey/ML-Project-Skoltech-2024-
-cd Boosting-Approaches-with-Multi-Label-Imbalanced-Data-Problem
-pip install -r requirements.txt
+- git clone https://github.com/fokrey/ML-Project-Skoltech-2024-
+- cd ML-Project-Skoltech-2024-
+- pip install -r requirements.txt
 
 The challenge of handling imbalanced datasets in multi-label classification scenarios is a significant hurdle in machine learning, particularly in domains where the imbalance reflects critical disparities in the data, such as medical diagnoses, text categorization, and image recognition. Our project aims to address this challenge by developing and implementing boosting algorithms tailored for multi-label imbalanced datasets. By enhancing the performance of classifiers in these complex scenarios, we strive to contribute towards more equitable and accurate predictive models.
 
