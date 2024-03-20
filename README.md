@@ -2,6 +2,11 @@
 # Team Balancify
 Boosting approaches for multi-class imbalanced data classification
 
+# Before running our project do this steps
+- git clone https://github.com/fokrey/ML-Project-Skoltech-2024-.git
+- cd ML-Project-Skoltech-2024
+- pip install -r requirements.txt
+
 ## Project Overview
 - First of all you need to do this steps
 git clone https://github.com/fokrey/ML-Project-Skoltech-2024-
