@@ -2,6 +2,7 @@ pmlb==1.0.1.post3
 ucimlrepo==0.0.3
 lightgbm==4.3.0
 imblearn==0.0
+numpy==1.26.4
 xgboost==2.0.3
 scikit-learn==1.4.1.post1
 pandas==2.2.1
